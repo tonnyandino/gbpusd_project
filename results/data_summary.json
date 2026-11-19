@@ -1,0 +1,16 @@
+{
+  "gbpusd_daily_rows": 3242,
+  "cross_market_tickers": 9,
+  "cross_market_cells": 85656,
+  "gbpusd_hourly_rows": 17285,
+  "documents_total": 263,
+  "documents_BoE_minutes": 71,
+  "documents_Fed_minutes": 94,
+  "documents_Fed_statement": 98,
+  "words": 1046506,
+  "sentences_scored": 36850,
+  "panel_rows": 2515,
+  "panel_features": 77,
+  "test_period": "2019-01-01 -> 2026-11-13",
+  "demo_mode": false
+}

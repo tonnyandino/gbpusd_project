@@ -1,0 +1,41 @@
+task,model,params,folds_chosen
+y_dir,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",6
+y_dir,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",1
+y_dir,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",7
+y_dir,Logistic: price + sentiment,C=0.01,7
+y_dir,Logistic: price only,C=0.01,7
+y_dir,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",5
+y_dir,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",1
+y_dir,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",1
+y_dir,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",5
+y_dir,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",2
+y_vol,"GARCH(1,1)","omega=0.0129, alpha=0.086, beta=0.876, persistence=0.962",1
+y_vol,"GARCH(1,1)","omega=0.0140, alpha=0.092, beta=0.869, persistence=0.961",1
+y_vol,"GARCH(1,1)","omega=0.0183, alpha=0.098, beta=0.853, persistence=0.951",1
+y_vol,"GARCH(1,1)","omega=0.0191, alpha=0.107, beta=0.844, persistence=0.951",1
+y_vol,"GARCH(1,1)","omega=0.0199, alpha=0.102, beta=0.847, persistence=0.949",1
+y_vol,"GARCH(1,1)","omega=0.0282, alpha=0.108, beta=0.813, persistence=0.921",1
+y_vol,"GARCH(1,1)","omega=0.0287, alpha=0.115, beta=0.802, persistence=0.916",1
+y_vol,"GARCH(1,1)","omega=0.0358, alpha=0.126, beta=0.777, persistence=0.903",1
+y_vol,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",4
+y_vol,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",3
+y_vol,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",4
+y_vol,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",3
+y_vol,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",3
+y_vol,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",2
+y_vol,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",1
+y_vol,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",1
+y_vol,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",3
+y_vol,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",2
+y_vol,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",1
+y_vol,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",1
+y_vol,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",4
+y_vol,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",1
+y_vol,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",1
+y_vol,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",1
+y_vol,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",3
+y_vol,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",2
+y_vol,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",2
+y_vol,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",3
+y_vol,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",3
+y_vol,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",1

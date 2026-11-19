@@ -1,0 +1,76 @@
+KEY FINDINGS (generated from the latest results)
+============================================================
+DATA
+- 3,242 daily GBP/USD prices, 9 related markets and 17,285 hourly prices (Yahoo Finance).
+- 263 central bank documents (BoE minutes 71, Fed minutes 94, Fed statement 98), 36,850 sentences scored with FinBERT-FOMC.
+- Chronological test period: 2019-01-01 -> 2026-11-13.
+
+1. DO THE AI MODELS BEAT THE TRIVIAL BASELINE?
+- Random forest (price only): MAE 0.322 vs 0.415 for 'tomorrow = today' -> 22.4% lower error.
+- Versus the naive baseline: significant (p < 0.001) (Diebold-Mariano test).
+
+2. DOES CENTRAL BANK SENTIMENT IMPROVE THE VOLATILITY FORECAST?
+- RF + sentiment: MAE 0.3244 vs 0.3217 without sentiment (+0.81%, worse).
+- The sentiment model is significantly worse (DM = +4.42, p < 0.001).
+- Announcement days only: +0.65% MAE; the difference is not statistically significant (DM = +0.72, p = 0.471).
+
+3. PRE- VS POST-COVID: DOES SENTIMENT HELP MORE AFTER COVID?
+- pre-COVID (260 test days): sentiment changes MAE by +0.57%; the difference is not statistically significant (DM = +1.77, p = 0.079).
+- COVID year (262 test days): sentiment changes MAE by +2.34%; the sentiment model is significantly worse (DM = +4.90, p < 0.001).
+- post-COVID (1526 test days): sentiment changes MAE by +0.58%; the sentiment model is significantly worse (DM = +2.59, p = 0.010).
+- Relationship between sentiment CHANGES and GBP/USD (monthly correlation):
+    boe_sent vs gbp_ret: pre-COVID -0.02 (n=35, p=0.92) | post-COVID +0.02 (n=70, p=0.86)
+    boe_sent vs gbp_vol: pre-COVID +0.13 (n=35, p=0.46) | post-COVID -0.06 (n=70, p=0.62)
+    fed_sent vs gbp_ret: pre-COVID +0.40 (n=35, p=0.02) | post-COVID -0.07 (n=70, p=0.56)
+    fed_sent vs gbp_vol: pre-COVID +0.07 (n=35, p=0.69) | post-COVID -0.04 (n=70, p=0.77)
+    div_sent vs gbp_ret: pre-COVID -0.19 (n=35, p=0.27) | post-COVID +0.06 (n=70, p=0.63)
+    div_sent vs gbp_vol: pre-COVID +0.09 (n=35, p=0.61) | post-COVID -0.02 (n=70, p=0.85)
+- Largest change after COVID: fed_sent vs gbp_ret (+0.40 before, -0.07 after) - evidence that the market reacted differently after COVID (treat as suggestive: small samples).
+
+4. WHICH MODEL WAS BEST OVERALL?
+- Lowest error: Hybrid HAR+RF: price only (MAE 0.3108).
+- Ranking (MAE): Hybrid HAR+RF: price only 0.311, Hybrid HAR+RF: price + sentiment 0.312, HAR-RV 0.317, GBM: price only 0.320, RF: price only 0.322, RF: price + key sentiment 0.323, RF: price + sentiment 0.324, GBM: price + sentiment 0.325, GARCH(1,1) 0.335, HAR + sentiment 0.352, Historical mean 0.374, Previous-day volatility (naive) 0.415
+
+5. MODIFICATIONS & HYBRID MODELS
+- RF: price + key sentiment: MAE 0.3228 (+1.7% vs HAR-RV, +0.3% vs RF: price only, -0.5% vs RF: price + sentiment).
+- Hybrid HAR+RF: price only: MAE 0.3108 (-2.1% vs HAR-RV, -3.4% vs RF: price only, -4.2% vs RF: price + sentiment).
+- Hybrid HAR+RF: price + sentiment: MAE 0.3118 (-1.7% vs HAR-RV, -3.1% vs RF: price only, -3.9% vs RF: price + sentiment).
+- RF + key sentiment (9 features) vs RF + full sentiment (~29): significantly better (DM = -2.21, p = 0.027).
+- RF + key sentiment vs RF price only: significantly worse (DM = +3.69, p < 0.001).
+- Hybrid HAR+RF: price only vs HAR-RV alone: significantly better (DM = -6.44, p < 0.001).
+- Hybrid HAR+RF: price + sentiment vs HAR-RV alone: significantly better (DM = -5.82, p < 0.001).
+
+6. EXTENSION - DIRECTION OF GBP/USD OVER 5 DAYS
+- Best model: RF: price + sentiment: accuracy 59.7%, AUC 0.626 (coin flip 51.9%, AUC 0.500).
+- On non-overlapping windows: accuracy 56.5%, significant (p = 0.005) vs 50%.
+- RF: AUC 0.618 without sentiment vs 0.626 with sentiment.
+- GBM: AUC 0.603 without sentiment vs 0.607 with sentiment.
+- Logistic: AUC 0.613 without sentiment vs 0.605 with sentiment.
+- pre-COVID: RF accuracy 54.6% -> 55.4% with sentiment (AUC 0.537 -> 0.569).
+- COVID year: RF accuracy 58.0% -> 61.8% with sentiment (AUC 0.626 -> 0.666).
+- post-COVID: RF accuracy 60.4% -> 60.1% with sentiment (AUC 0.627 -> 0.634).
+
+7. TIME-SERIES ANALYSIS (REPRODUCING HILSCHER ET AL., 2026)
+- BoE and Fed sentiment move together: correlation 0.28 (quarterly), 0.53 after HP smoothing - compare with the paper's Fed-ECB co-movement.
+- Granger causality: gbp_ret -> boe_sent (2 lags, p = 0.026).
+- Granger causality: gbp_ret -> fed_sent (3 lags, p = 0.026).
+  Direction: market moves help predict LATER central bank sentiment, not the reverse - central bank language reacts to markets.
+
+8. EVENT STUDY - GBP/USD AFTER MINUTES RELEASES
+- BoE 'more negative' minutes: -62.8 bp after 5 days (t = -2.75, n = 23).
+- BoE 'neutral' minutes: +51.0 bp after 1 days (t = +2.41, n = 22).
+- BoE 'neutral' minutes: +56.9 bp after 3 days (t = +2.05, n = 22).
+
+HYPER-PARAMETERS (chosen on the last year of each training window)
+- GBM: price + sentiment: most often learning_rate=0.03, max_depth=2, min_samples_leaf=40 (4 of 7 folds)
+- GBM: price only: most often learning_rate=0.03, max_depth=3, min_samples_leaf=40 (4 of 7 folds)
+- Hybrid HAR+RF: price + sentiment: most often max_depth=4, max_features=1.0, min_samples_leaf=20 (3 of 7 folds)
+- Hybrid HAR+RF: price only: most often max_depth=4, max_features=1.0, min_samples_leaf=20 (3 of 7 folds)
+- RF: price + key sentiment: most often max_depth=8, max_features=1.0, min_samples_leaf=20 (4 of 7 folds)
+- RF: price + sentiment: most often max_depth=8, max_features=1.0, min_samples_leaf=20 (3 of 7 folds)
+- RF: price only: most often max_depth=8, max_features=0.33, min_samples_leaf=20 (3 of 7 folds)
+
+LIMITATIONS
+- Hawkish/dovish score from the terminology dictionary (FOMC-RoBERTa is gated on Hugging Face).
+- Minutes per bank: BoE 71, Fed 94 - few events relative to the number of sentiment features (overfitting risk).
+- Volatility is measured with the Garman-Klass range estimator on daily data (no intraday realised volatility).

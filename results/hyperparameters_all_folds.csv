@@ -1,0 +1,359 @@
+task,test_year,model,params,validation_loss,chosen
+y_vol,2019,"GARCH(1,1)","omega=0.0199, alpha=0.102, beta=0.847, persistence=0.949",,True
+y_vol,2020,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1765979247450981,False
+y_vol,2020,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.17367438512782402,False
+y_vol,2020,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.17706530285809244,False
+y_vol,2020,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.17321953881369095,True
+y_vol,2020,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.18015155034084737,False
+y_vol,2020,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.17849762777481917,True
+y_vol,2020,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.181127641068145,False
+y_vol,2020,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1788022850416855,False
+y_vol,2020,"GARCH(1,1)","omega=0.0282, alpha=0.108, beta=0.813, persistence=0.921",,True
+y_vol,2020,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.17142165480756114,False
+y_vol,2020,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1696621281423497,True
+y_vol,2020,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.17906428805033142,False
+y_vol,2020,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.18091320275770767,False
+y_vol,2020,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.18326387042065628,True
+y_vol,2020,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.18768136592490703,False
+y_vol,2020,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.21623722881004412,False
+y_vol,2020,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.21422385800020063,False
+y_vol,2020,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.17784936201470025,False
+y_vol,2020,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.17724835865959665,True
+y_vol,2020,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.17764933636805874,False
+y_vol,2020,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.17743867598375812,False
+y_vol,2020,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.16118725031999104,True
+y_vol,2020,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.16257485728902885,False
+y_vol,2020,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.16131655242325188,False
+y_vol,2020,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.16270753619021053,False
+y_vol,2020,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.16382407181252545,True
+y_vol,2020,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1643790343345934,False
+y_vol,2020,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1644713883379723,False
+y_vol,2020,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1649747851627523,False
+y_vol,2021,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1815144654520383,False
+y_vol,2021,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1830081928015547,False
+y_vol,2021,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.17909397586423365,True
+y_vol,2021,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18000057005570957,False
+y_vol,2021,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.18462618745830192,False
+y_vol,2021,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.18662352243171135,False
+y_vol,2021,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.18186054044375116,True
+y_vol,2021,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18301756054081275,False
+y_vol,2021,"GARCH(1,1)","omega=0.0358, alpha=0.126, beta=0.777, persistence=0.903",,True
+y_vol,2021,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.18666995622890742,False
+y_vol,2021,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1852013884057121,True
+y_vol,2021,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.19151689543931918,False
+y_vol,2021,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.19873264850921446,False
+y_vol,2021,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.19024438121586268,False
+y_vol,2021,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.18868502255968375,True
+y_vol,2021,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.2071940133007106,False
+y_vol,2021,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.2130096423680679,False
+y_vol,2021,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.18589713467312696,False
+y_vol,2021,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.18557486286909483,False
+y_vol,2021,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.18196647000038968,False
+y_vol,2021,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18082168005646004,True
+y_vol,2021,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14618228472783687,False
+y_vol,2021,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14632429245025552,False
+y_vol,2021,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.14489492227542553,False
+y_vol,2021,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1448591242139084,True
+y_vol,2021,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1474017122530894,False
+y_vol,2021,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14759509131150522,False
+y_vol,2021,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.14559386736362154,True
+y_vol,2021,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.14605494934738233,False
+y_vol,2022,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.12255144366339353,False
+y_vol,2022,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.12112859581674962,False
+y_vol,2022,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.12082819546864453,True
+y_vol,2022,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.12101719561728036,False
+y_vol,2022,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1274591998010554,False
+y_vol,2022,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.12413935063337538,False
+y_vol,2022,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.12819148636463853,False
+y_vol,2022,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.12400559584013549,True
+y_vol,2022,"GARCH(1,1)","omega=0.0287, alpha=0.115, beta=0.802, persistence=0.916",,True
+y_vol,2022,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.12024465373482872,False
+y_vol,2022,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.11916496375212642,True
+y_vol,2022,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.1296713542771957,False
+y_vol,2022,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.13243467511914778,False
+y_vol,2022,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.12774203807662987,True
+y_vol,2022,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1290035990223669,False
+y_vol,2022,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.14183497805452822,False
+y_vol,2022,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.15124630854634363,False
+y_vol,2022,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.12260073669127733,False
+y_vol,2022,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1226255454853563,False
+y_vol,2022,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.12200305177290223,True
+y_vol,2022,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.12217033801874895,False
+y_vol,2022,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.11554446112958115,False
+y_vol,2022,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.11521604708905181,True
+y_vol,2022,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.11656714727024772,False
+y_vol,2022,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.11542939978567256,False
+y_vol,2022,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.11709488100109573,False
+y_vol,2022,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.11598316691460311,True
+y_vol,2022,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.11902886079518796,False
+y_vol,2022,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1177630623524608,False
+y_vol,2023,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1946005619725923,False
+y_vol,2023,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.19069808119219364,False
+y_vol,2023,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.19208580613578083,False
+y_vol,2023,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1900171683630489,True
+y_vol,2023,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.19753131255416986,False
+y_vol,2023,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1905551640054441,False
+y_vol,2023,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.19512486920413855,False
+y_vol,2023,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18997497900305535,True
+y_vol,2023,"GARCH(1,1)","omega=0.0191, alpha=0.107, beta=0.844, persistence=0.951",,True
+y_vol,2023,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.17383269524154893,True
+y_vol,2023,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.17904806335518464,False
+y_vol,2023,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.17664642133490935,False
+y_vol,2023,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.19436160396428656,False
+y_vol,2023,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.18321649812064378,True
+y_vol,2023,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.18721915279304463,False
+y_vol,2023,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.1996132416626787,False
+y_vol,2023,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.1898660184657656,False
+y_vol,2023,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.19511713777553458,False
+y_vol,2023,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.19114173688089703,False
+y_vol,2023,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.19416672273408614,False
+y_vol,2023,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.190892755140643,True
+y_vol,2023,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.16228289645893865,False
+y_vol,2023,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.16196415052679902,True
+y_vol,2023,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1622896007330364,False
+y_vol,2023,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1628077355161423,False
+y_vol,2023,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.16232729915872737,False
+y_vol,2023,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.16221080735402071,True
+y_vol,2023,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.16283406513992515,False
+y_vol,2023,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.16323464722766176,False
+y_vol,2024,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.13442347367336044,False
+y_vol,2024,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.13492735643525028,False
+y_vol,2024,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.13435422673359745,True
+y_vol,2024,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1354231916689709,False
+y_vol,2024,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1335430692044782,False
+y_vol,2024,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.13459991160062382,False
+y_vol,2024,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.13233419794328433,True
+y_vol,2024,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.13494618647817122,False
+y_vol,2024,"GARCH(1,1)","omega=0.0183, alpha=0.098, beta=0.853, persistence=0.951",,True
+y_vol,2024,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.13401106688473574,True
+y_vol,2024,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1376551921288502,False
+y_vol,2024,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.1428982650954744,False
+y_vol,2024,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.1490546640809606,False
+y_vol,2024,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.13365216063707375,True
+y_vol,2024,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.13562628446698508,False
+y_vol,2024,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.14068436558199934,False
+y_vol,2024,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.14613641022399662,False
+y_vol,2024,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1337254783862395,True
+y_vol,2024,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.134635892672069,False
+y_vol,2024,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.13444030537852175,False
+y_vol,2024,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.13506612241944357,False
+y_vol,2024,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.13511986532777148,False
+y_vol,2024,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1343831144452489,False
+y_vol,2024,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.13423999647801668,False
+y_vol,2024,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.13334697152188937,True
+y_vol,2024,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.13429814591704406,False
+y_vol,2024,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.13380453933292005,False
+y_vol,2024,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.13321100190462448,False
+y_vol,2024,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1323078116636225,True
+y_vol,2025,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.18863973805664422,False
+y_vol,2025,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.18574180245835648,False
+y_vol,2025,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.18232336073243752,False
+y_vol,2025,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18036123526427192,True
+y_vol,2025,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.19580181871071692,False
+y_vol,2025,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1896931284015273,False
+y_vol,2025,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1911150498318592,False
+y_vol,2025,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18629465559553726,True
+y_vol,2025,"GARCH(1,1)","omega=0.0140, alpha=0.092, beta=0.869, persistence=0.961",,True
+y_vol,2025,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.17097543440270552,False
+y_vol,2025,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.16804232431123836,True
+y_vol,2025,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.17411652535293418,False
+y_vol,2025,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.17299219406646243,False
+y_vol,2025,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.18346196413011953,False
+y_vol,2025,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1814004161942535,True
+y_vol,2025,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.1824383177039131,False
+y_vol,2025,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.19372348559872318,False
+y_vol,2025,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1913716863976353,False
+y_vol,2025,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.18835566358020975,False
+y_vol,2025,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.18564815548051275,False
+y_vol,2025,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.18353165502003474,True
+y_vol,2025,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.16911262299842755,False
+y_vol,2025,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.16688614237414115,True
+y_vol,2025,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1690504512354502,False
+y_vol,2025,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.16709213812575455,False
+y_vol,2025,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.1691390399635345,False
+y_vol,2025,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.168171117345336,True
+y_vol,2025,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.17152661816044576,False
+y_vol,2025,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1688699374432433,False
+y_vol,2026,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14745960826354712,False
+y_vol,2026,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.1454620330561575,True
+y_vol,2026,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.148319968019258,False
+y_vol,2026,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.14550903811826243,False
+y_vol,2026,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14689281829611495,False
+y_vol,2026,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14522798987487523,True
+y_vol,2026,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.14585489287687523,False
+y_vol,2026,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1460008601192876,False
+y_vol,2026,"GARCH(1,1)","omega=0.0129, alpha=0.086, beta=0.876, persistence=0.962",,True
+y_vol,2026,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.14874522107336677,True
+y_vol,2026,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.1498656427106856,False
+y_vol,2026,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.15441405053005097,False
+y_vol,2026,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.15576560714590085,False
+y_vol,2026,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.14825372673668166,False
+y_vol,2026,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.14642536621189048,True
+y_vol,2026,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.15198853412729146,False
+y_vol,2026,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.15463972398484607,False
+y_vol,2026,RF: price + key sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14758552836340727,False
+y_vol,2026,RF: price + key sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14542113116537775,False
+y_vol,2026,RF: price + key sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.14674031121088735,False
+y_vol,2026,RF: price + key sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.1451623515650308,True
+y_vol,2026,Hybrid HAR+RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14255406293409978,False
+y_vol,2026,Hybrid HAR+RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14357906557737782,False
+y_vol,2026,Hybrid HAR+RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1416122440916906,True
+y_vol,2026,Hybrid HAR+RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.14394545277293996,False
+y_vol,2026,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.14260009569907497,False
+y_vol,2026,Hybrid HAR+RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.14345770852368728,False
+y_vol,2026,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.1412460094696137,True
+y_vol,2026,Hybrid HAR+RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.14280623007330515,False
+y_dir,2020,Logistic: price only,C=0.01,0.7265786137384991,True
+y_dir,2020,Logistic: price only,C=0.1,0.8095492580204489,False
+y_dir,2020,Logistic: price only,C=1.0,0.8831624331288094,False
+y_dir,2020,Logistic: price + sentiment,C=0.01,0.7627541012244995,True
+y_dir,2020,Logistic: price + sentiment,C=0.1,1.187391824236054,False
+y_dir,2020,Logistic: price + sentiment,C=1.0,1.6171857462510126,False
+y_dir,2020,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.7403865495809157,True
+y_dir,2020,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7977018651166455,False
+y_dir,2020,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.8771598600503906,False
+y_dir,2020,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",1.068091327446395,False
+y_dir,2020,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.7652548730487226,True
+y_dir,2020,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.8068121628153884,False
+y_dir,2020,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.9845926103433001,False
+y_dir,2020,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",1.1420985023463859,False
+y_dir,2020,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6985466882165665,True
+y_dir,2020,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.7031824490130263,False
+y_dir,2020,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.699289704871767,False
+y_dir,2020,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.7046694920326876,False
+y_dir,2020,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6940033112720524,True
+y_dir,2020,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.7044844242739687,False
+y_dir,2020,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.696441821616851,False
+y_dir,2020,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.7040010899898833,False
+y_dir,2021,Logistic: price only,C=0.01,0.6612833205495207,True
+y_dir,2021,Logistic: price only,C=0.1,0.701640041459686,False
+y_dir,2021,Logistic: price only,C=1.0,0.7303420700671764,False
+y_dir,2021,Logistic: price + sentiment,C=0.01,0.8062876005248177,True
+y_dir,2021,Logistic: price + sentiment,C=0.1,1.0420860319058611,False
+y_dir,2021,Logistic: price + sentiment,C=1.0,1.2676487877169542,False
+y_dir,2021,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.7095816554825997,True
+y_dir,2021,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.718476025108143,False
+y_dir,2021,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7891612649362997,False
+y_dir,2021,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8314262367612887,False
+y_dir,2021,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6994986763375245,True
+y_dir,2021,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7396133665457636,False
+y_dir,2021,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7728134484456874,False
+y_dir,2021,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.9409310953120432,False
+y_dir,2021,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6696538210595501,True
+y_dir,2021,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6729429056277607,False
+y_dir,2021,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6702175799262396,False
+y_dir,2021,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6797859860601433,False
+y_dir,2021,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6676469408043859,True
+y_dir,2021,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6701119937364914,False
+y_dir,2021,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6702483996079107,False
+y_dir,2021,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6747241253706262,False
+y_dir,2022,Logistic: price only,C=0.01,0.6798434076931451,True
+y_dir,2022,Logistic: price only,C=0.1,0.7063228094485245,False
+y_dir,2022,Logistic: price only,C=1.0,0.7208888319495059,False
+y_dir,2022,Logistic: price + sentiment,C=0.01,0.6640191450362304,True
+y_dir,2022,Logistic: price + sentiment,C=0.1,0.8387629140165673,False
+y_dir,2022,Logistic: price + sentiment,C=1.0,1.2482635819103371,False
+y_dir,2022,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6984579023141838,True
+y_dir,2022,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7227623216404505,False
+y_dir,2022,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7651098243640577,False
+y_dir,2022,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8374525874121763,False
+y_dir,2022,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.7355123427028638,True
+y_dir,2022,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7458231238960974,False
+y_dir,2022,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.9087835170535237,False
+y_dir,2022,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",1.0191127160160576,False
+y_dir,2022,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.66590541521213,True
+y_dir,2022,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6703528684419654,False
+y_dir,2022,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6684735772298923,False
+y_dir,2022,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6719990870792759,False
+y_dir,2022,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6782037349799678,True
+y_dir,2022,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.68684669295995,False
+y_dir,2022,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6906780154087707,False
+y_dir,2022,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.7030666123201609,False
+y_dir,2023,Logistic: price only,C=0.01,0.684480555105695,True
+y_dir,2023,Logistic: price only,C=0.1,0.7155470105373146,False
+y_dir,2023,Logistic: price only,C=1.0,0.7233993316641664,False
+y_dir,2023,Logistic: price + sentiment,C=0.01,0.741431665819339,True
+y_dir,2023,Logistic: price + sentiment,C=0.1,0.9987823299669681,False
+y_dir,2023,Logistic: price + sentiment,C=1.0,1.2500832194247042,False
+y_dir,2023,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6939177771406535,True
+y_dir,2023,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7190489463867837,False
+y_dir,2023,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7681917363650672,False
+y_dir,2023,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8007732942939016,False
+y_dir,2023,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6682695446736211,True
+y_dir,2023,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.6883626949405603,False
+y_dir,2023,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7405053100893814,False
+y_dir,2023,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8515704021919139,False
+y_dir,2023,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6722934338501044,False
+y_dir,2023,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.665834741729218,True
+y_dir,2023,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6685634165723581,False
+y_dir,2023,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6673273970634029,False
+y_dir,2023,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6643861903255371,False
+y_dir,2023,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6619299505813943,False
+y_dir,2023,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6600956262733174,True
+y_dir,2023,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.663166328077796,False
+y_dir,2024,Logistic: price only,C=0.01,0.6719460212708104,True
+y_dir,2024,Logistic: price only,C=0.1,0.7012035535316177,False
+y_dir,2024,Logistic: price only,C=1.0,0.7131701423455504,False
+y_dir,2024,Logistic: price + sentiment,C=0.01,0.7067785984113306,True
+y_dir,2024,Logistic: price + sentiment,C=0.1,0.7592237656619639,False
+y_dir,2024,Logistic: price + sentiment,C=1.0,0.8147437003233102,False
+y_dir,2024,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6969353470732644,True
+y_dir,2024,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7201002528528543,False
+y_dir,2024,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.780450244309715,False
+y_dir,2024,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8390845274742639,False
+y_dir,2024,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6860857393315598,True
+y_dir,2024,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.7322958904632827,False
+y_dir,2024,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.8244183184090733,False
+y_dir,2024,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.8604588760026928,False
+y_dir,2024,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6680584594565622,True
+y_dir,2024,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6739327448280363,False
+y_dir,2024,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6754748301884531,False
+y_dir,2024,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.688486646486166,False
+y_dir,2024,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6701183913361763,True
+y_dir,2024,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6716484700228218,False
+y_dir,2024,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6745822691583923,False
+y_dir,2024,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6753555194352331,False
+y_dir,2025,Logistic: price only,C=0.01,0.6397759855087989,True
+y_dir,2025,Logistic: price only,C=0.1,0.6451796441303768,False
+y_dir,2025,Logistic: price only,C=1.0,0.649040925806265,False
+y_dir,2025,Logistic: price + sentiment,C=0.01,0.6166345010918508,True
+y_dir,2025,Logistic: price + sentiment,C=0.1,0.626856214058706,False
+y_dir,2025,Logistic: price + sentiment,C=1.0,0.6357009980769595,False
+y_dir,2025,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6442732896005945,True
+y_dir,2025,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.6576102234725784,False
+y_dir,2025,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.6888637363568318,False
+y_dir,2025,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.7246619688340091,False
+y_dir,2025,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6446466053171852,False
+y_dir,2025,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.6422848459010042,True
+y_dir,2025,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7086316120570577,False
+y_dir,2025,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.7464270650516521,False
+y_dir,2025,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6444435493024997,False
+y_dir,2025,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6352416818930874,True
+y_dir,2025,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6394658507065729,False
+y_dir,2025,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6367649231280126,False
+y_dir,2025,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.636982510893395,False
+y_dir,2025,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6304493017563572,False
+y_dir,2025,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6346770329909637,False
+y_dir,2025,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6280738965393156,True
+y_dir,2026,Logistic: price only,C=0.01,0.6803092556601011,True
+y_dir,2026,Logistic: price only,C=0.1,0.688817454322879,False
+y_dir,2026,Logistic: price only,C=1.0,0.6911825213664364,False
+y_dir,2026,Logistic: price + sentiment,C=0.01,0.6645912398326344,True
+y_dir,2026,Logistic: price + sentiment,C=0.1,0.6667514960872163,False
+y_dir,2026,Logistic: price + sentiment,C=1.0,0.6684364850920406,False
+y_dir,2026,GBM: price only,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6907312995477403,True
+y_dir,2026,GBM: price only,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.6999962771500273,False
+y_dir,2026,GBM: price only,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7050555032070815,False
+y_dir,2026,GBM: price only,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.7519690787193757,False
+y_dir,2026,GBM: price + sentiment,"learning_rate=0.03, max_depth=2, min_samples_leaf=40",0.6726681812334667,True
+y_dir,2026,GBM: price + sentiment,"learning_rate=0.03, max_depth=3, min_samples_leaf=40",0.6837458067583294,False
+y_dir,2026,GBM: price + sentiment,"learning_rate=0.1, max_depth=2, min_samples_leaf=40",0.7022046937269004,False
+y_dir,2026,GBM: price + sentiment,"learning_rate=0.1, max_depth=3, min_samples_leaf=40",0.7354785240508722,False
+y_dir,2026,RF: price only,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6835206284170318,True
+y_dir,2026,RF: price only,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.689335827766894,False
+y_dir,2026,RF: price only,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6899655589289492,False
+y_dir,2026,RF: price only,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6947085495579123,False
+y_dir,2026,RF: price + sentiment,"max_depth=4, max_features=0.33, min_samples_leaf=20",0.6743263138272227,True
+y_dir,2026,RF: price + sentiment,"max_depth=4, max_features=1.0, min_samples_leaf=20",0.6809841023307762,False
+y_dir,2026,RF: price + sentiment,"max_depth=8, max_features=0.33, min_samples_leaf=20",0.6754438634998473,False
+y_dir,2026,RF: price + sentiment,"max_depth=8, max_features=1.0, min_samples_leaf=20",0.6807374329638025,False
